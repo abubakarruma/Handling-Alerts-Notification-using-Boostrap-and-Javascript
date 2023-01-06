@@ -1,0 +1,42 @@
+<!-- Code by Abubakar Ahmad Ruma
+Email: abbuakarruma@gmail.com
+Social: @abubakarruma -->
+
+<div id="successalert" style="z-index: 9999999;" class="modal fade in" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true" style="">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body alert-success" id="successmsg">
+            </div>
+        </div><!-- Main content -->
+    </div>
+</div>
+<!--end of modal-dialog-->
+
+<div id="erroralert" style="z-index: 9999999;" class="modal fade in" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true" style="">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body alert-danger" id="errormsg">
+            </div>
+        </div><!-- Main content -->
+    </div>
+</div>
+<!--end of modal-dialog-->
+
+<script>
+    function showSuccessAlert() {
+        $("#successalert").modal("show");
+        setTimeout(() => {
+            $("#successalert").modal("hide");
+        }, 2000);
+    }
+
+    function showErrorAlert() {
+        $("#erroralert").modal("show");
+        setTimeout(() => {
+            $("#erroralert").modal("hide");
+        }, 2000);
+    }
+</script>
